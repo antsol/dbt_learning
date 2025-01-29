@@ -1,0 +1,12 @@
+SELECT [custid] as [customer_Id]
+      ,[companyname] as [company_name]
+      ,[contactname] as [contact_name]
+      ,[contacttitle] as [contact_title]
+      ,[address]
+      ,[city]
+      ,[region]
+      ,[postalcode]
+      ,[country]
+      ,[phone]
+      ,[fax]
+  FROM {{source('sales','customers')}}

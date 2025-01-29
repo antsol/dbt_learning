@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: fact_order_details  # Имя модели (должно совпадать с SQL-файлом)
+    description: "Тестовая модель для order_details"
+
+    columns:
+      - name: surrogate_key
+        description: "Уникальный идентификатор"
+        tests:
+          - unique
+

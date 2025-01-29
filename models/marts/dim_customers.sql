@@ -1,0 +1,13 @@
+SELECT [customer_Id]
+      ,[company_name]
+      ,[contact_name]
+      ,[contact_title]
+      ,[address]
+      ,[city]
+      ,[region]
+      ,[postalcode]
+      ,[country]
+      ,[phone]
+      ,[fax]
+      ,[continent]
+  FROM {{ref('int_customers')}}

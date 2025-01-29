@@ -1,0 +1,10 @@
+
+sources:
+  - name: sales
+    schema: "sales"
+    tables:
+      - name: customers
+      - name: OrderDetails
+      - name: Orders
+      - name: Customers
+
