@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: "Таблица измерений клиентов"
+    columns:
+      - name: continent
+        description: "Континент, к которому относится клиент"
+        tests:
+          - not_null  # Проверяет, что поле не пустое
+          - accepted_values:
+              values: ['EUROPE', 'SOUTH AMERICA', 'NORTH AMERICA', 'UNKNOWN']  # Проверяет список допустимых значений
